@@ -1,27 +1,139 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index - Nextera Prime Corporation</title>
-  <link rel="stylesheet" href="assets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nextera Prime Corporation</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #05070d;
+            color: #e5e5e5;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: linear-gradient(90deg, #001428, #003366);
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header h1 {
+            color: #00d9ff;
+            font-size: 26px;
+            letter-spacing: 2px;
+        }
+        nav a {
+            color: #e5e5e5;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #00d9ff;
+        }
+        section {
+            padding: 80px 10%;
+            text-align: center;
+        }
+        .hero {
+            background: linear-gradient(180deg, #001428, #000);
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h2 {
+            font-size: 48px;
+            color: #00d9ff;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            color: #ccc;
+            font-size: 18px;
+            max-width: 600px;
+        }
+        .division {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .card {
+            background: #0b0f1a;
+            border: 1px solid #00d9ff33;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px #00d9ff22;
+        }
+        .card h3 {
+            color: #00d9ff;
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #001428;
+            padding: 30px;
+            text-align: center;
+            color: #aaa;
+        }
+        footer a {
+            color: #00d9ff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-<header>
-  <h1>Nextera Prime Corporation</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="divisions.html">Divisions</a>
-    <a href="vision.html">Vision & Mission</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-<main>
-  <h2>Welcome to Nextera Prime Corporation</h2><p>Pioneering innovation through finance, blockchain, and industry.</p>
-</main>
-<footer>
-  © 2025 Nextera Prime Corporation. All rights reserved.
-</footer>
+    <header>
+        <h1>Nextera Prime Corporation</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#divisions">Divisions</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>The Future Starts with Nextera</h2>
+        <p>Building the next generation of innovation through technology, blockchain, and real-world industries.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Nextera Prime Corporation</h2>
+        <p>Nextera Prime Corporation is a modern holding company focusing on advanced technology, blockchain innovation, and sustainable industry growth.</p>
+    </section>
+
+    <section id="divisions">
+        <h2>Our Divisions</h2>
+        <div class="division">
+            <div class="card">
+                <h3>Nextera Finance Technology</h3>
+                <p>Specialized in digital finance innovation, including fintech and decentralized systems to empower the next generation of global economy.</p>
+            </div>
+            <div class="card">
+                <h3>Nextera Chain Lab</h3>
+                <p>Dedicated to blockchain research, crypto asset development, and decentralized ecosystem growth, including the Next Level coin project.</p>
+            </div>
+            <div class="card">
+                <h3>Nextera Industries</h3>
+                <p>Expanding into real-world products such as natural beverages, honey, and herbal innovations to balance technology and nature.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email us at: <a href="mailto:nexteraprimecorporation@gmail.com">nexteraprimecorporation@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Nextera Prime Corporation. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
